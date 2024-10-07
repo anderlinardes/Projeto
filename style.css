@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --cor01: #CCC098;
     --cor02: #EFE6CD;
     --cor03: #7D8758;
-    --cor04: #C5B67B;
-    --cor05: #9EA58D;
-}
+    --cor04: #474d33;
+    --cor05: #C5B67B;
+    --cor06: #9EA58D;
+    --fonte-titulo: "Cinzel", serif;
+    --fonte-padrao: "Roboto", sans-serif;
+} 
 
 body {
     background-color: var(--cor03);
@@ -18,28 +24,22 @@ header {
     color: var(--cor02); 
     padding: 20px; 
     text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    text-shadow: 7px 3px 3px rgba(0, 0, 0, 0.411);
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
- }
-
- nav a {
-    margin: 0 15px; 
-    text-decoration: none;
-    color: red;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    padding: 5px;
+    font-family: var(--fonte-padrao);
 }
 
 nav a {
     margin: 0 15px; 
     text-decoration: none;
-    color: var(--cor02);
+    color: var(--cor01);
 }
 
 nav a:hover {
@@ -48,23 +48,52 @@ nav a:hover {
 
 main {
     padding: 20px;
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 div {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto; /* Aumenta o espaçamento entre os divs */
     background-color: var(--cor02);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.8em;
 }
 
-h2{
-    color: var(--cor03);
+div a:hover {
+    text-decoration: none;
+    color: var(--cor01);
+}
+
+h2 {
+    color: var(--cor04);
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
 }
 
 img {
-width: 300px;
-height: 400px;
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
 }
 
+.contato-img {
+    width: 40px; 
+    height: auto; 
+    margin: 10px 0;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contato-item img {
+    margin-right: 10px;
+}
