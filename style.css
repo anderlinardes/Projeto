@@ -21,8 +21,9 @@ body {
 
 header {
     background-color: var(--cor03); 
-    color: var(--cor02); 
-    padding: 20px; 
+    color: var(--cor02);
+    margin-bottom: 5px;
+    padding: 10px; 
     text-align: center;
     font-family: var(--fonte-titulo);
     font-size: 2em;
@@ -48,12 +49,12 @@ nav a:hover {
 
 main {
     padding: 20px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto; 
 }
 
 div {
     max-width: 1000px;
-    margin: 20px auto; /* Aumenta o espaçamento entre os divs */
+    margin: 20px auto; 
     background-color: var(--cor02);
     padding: 20px;
     border-radius: 15px;
@@ -67,7 +68,18 @@ div {
 
 div a:hover {
     text-decoration: none;
-    color: var(--cor01);
+    color: var(--cor03);
+}
+
+
+div.conteudoSobre{
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;    
+}
+
+div.imagemSobre{
+    box-shadow: none;
 }
 
 h2 {
@@ -77,8 +89,8 @@ h2 {
 }
 
 img {
-    width: 250px;
-    height: auto;
+    width: 300pxpx;
+    height: 300px;
     border-radius: 20px;
 }
 
@@ -96,4 +108,16 @@ img {
 
 .contato-item img {
     margin-right: 10px;
+}
+
+.conteudoSobre{
+    display: flex; 
+    align-items: center; 
+    box-shadow: none;
+}
+
+@media screen and (max-width:700px){
+    .conteudoSobre{
+        flex-direction: column;
+    }
 }
